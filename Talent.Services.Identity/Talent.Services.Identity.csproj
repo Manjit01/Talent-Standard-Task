@@ -14,6 +14,7 @@
 
 <PropertyGroup>
     <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+    <UserSecretsId>8d726093-e7c6-44e3-8fdc-71372afae1d1</UserSecretsId>
 </PropertyGroup>
   <ItemGroup>
     <Folder Include="wwwroot\" />

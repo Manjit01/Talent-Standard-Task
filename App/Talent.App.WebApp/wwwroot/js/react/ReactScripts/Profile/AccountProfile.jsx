@@ -69,11 +69,8 @@ export default class AccountProfile extends React.Component {
 	loadData() {
 		var cookies = Cookies.get('talentAuthToken');
 
-		const localUrl = 'http://localhost:60290/profile/profile/getTalentProfile';
-		const azureUrl = 'https://standardtasktalentservicesprofile.azurewebsites.net/profile/profile/getTalentProfile';
-
 		$.ajax({
-			url: localUrl,
+			url: 'https://talentprofile.azurewebsites.net/profile/profile/getTalentProfile',
 			headers: {
 				'Authorization': 'Bearer ' + cookies,
 				'Content-Type': 'application/json'
@@ -108,11 +105,9 @@ export default class AccountProfile extends React.Component {
 	saveProfile() {
 		var cookies = Cookies.get('talentAuthToken');
 
-		const localUrl = 'http://localhost:60290/profile/profile/updateTalentProfile';
-		const azureUrl = 'https://standardtasktalentservicesprofile.azurewebsites.net/profile/profile/updateTalentProfile';
 
 		$.ajax({
-			url: localUrl,
+			url: 'https://talentprofile.azurewebsites.net/profile/profile/updateTalentProfile',
 			headers: {
 				'Authorization': 'Bearer ' + cookies,
 				'Content-Type': 'application/json'
