@@ -4,11 +4,14 @@ import Cookies from 'js-cookie';
 import { default as Countries } from '../../../../../wwwroot/util/jsonFiles/countries.json'
 
 export default class Education extends React.Component {
-    constructor(props) {
-        super(props)
-    };
+	constructor(props) {
+		super(props)
+	};
 
-    render() {
+	render() {
+		return (
+			<h1>Education:</h1>
+		);
 
-    }
+	}
 }

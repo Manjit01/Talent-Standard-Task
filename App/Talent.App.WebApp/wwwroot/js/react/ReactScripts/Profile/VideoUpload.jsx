@@ -5,16 +5,25 @@ import { Progress } from 'semantic-ui-react'
 
 
 export default class VideoUpload extends React.Component {
-    constructor(props) {
-        super(props)
+	constructor(props) {
+		super(props)
 
-        this.maxLength = 100 * 1024 * 1024; // 100MB - arbitary choice
-        this.fileTypes = ['video/mp4']
+		this.maxLength = 100 * 1024 * 1024; // 100MB - arbitary choice
+		this.fileTypes = ['video/mp4']
 
-     
-    }
 
-    render() {
-        
-    }
+	}
+
+	render() {
+		return (
+			<div className='row'>
+				<div className="ui sixteen wide column">
+					<React.Fragment>
+						<p>Profile Video:</p>
+					</React.Fragment>
+					<button type="button" className="ui right floated teal button">Edit</button>
+				</div>
+			</div>
+		)
+	}
 }

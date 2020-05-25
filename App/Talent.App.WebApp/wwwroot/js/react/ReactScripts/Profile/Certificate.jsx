@@ -4,14 +4,17 @@ import Cookies from 'js-cookie';
 
 export default class Certificate extends React.Component {
 
-    constructor(props) {
-        super(props)
-        
+	constructor(props) {
+		super(props)
 
-    };
 
-    render() {
+	};
 
-    }
+	render() {
+		return (
+			<h1>Your code goes here</h1>
+		);
+
+	}
 }
 
